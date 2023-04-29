@@ -1,0 +1,20 @@
+ALGORITHM insertion_sort
+VAR
+    tab  : ARRAY_OF INTEGER[length]; 
+    i,j,temp : INTEGER;
+BEGIN
+    
+	FOR i FROM 0 TO tab.length STEP 1  DO
+    temp= tab[i+1];
+    j= i-1;
+
+        WHILE (tab[j]>=temp) DO
+            tab[j+1] = tab[j];
+            j=j-1;
+        END_WHILE
+    
+    END_FOR
+
+    write
+		
+END
