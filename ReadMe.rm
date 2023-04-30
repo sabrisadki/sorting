@@ -1,0 +1,18 @@
+README
+
+This is an implementation of the Insertion Sort algorithm in pseudocode.
+
+The algorithm takes an array of integers as input and sorts them in ascending order. The input array is represented by the variable tab, which is an array of integers with length length. The algorithm uses two integer variables i and j to iterate through the array and a temporary variable temp to hold the current value being sorted.
+
+The algorithm works as follows:
+
+Iterate through the input array tab from index 0 to length-1.
+For each index i, set temp equal to the value at index i+1.
+Set j equal to i-1.
+While j is greater than or equal to 0 and the value at index j is greater than or equal to temp, move the value at index j to index j+1 and decrement j.
+Set the value at index j+1 to temp.
+Repeat steps 2-5 until all elements have been sorted.
+Output the sorted array.
+Note that this implementation assumes that the input array tab is already initialized with values.
+
+This algorithm has a time complexity of O(n^2) in the worst case, where n is the length of the input array. However, it can be efficient for small arrays or partially sorted arrays.
